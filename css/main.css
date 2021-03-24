@@ -354,26 +354,6 @@ img {
   width: 100%;
   max-width: 30px;
   max-height: 30px;
-}.faq:not(:last-of-type) {
-	border-bottom: 1px solid rgba(0,0,0,.1)
-}
-.faq-input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-.faq-label {
-  cursor: pointer;
-}
-.faq-content {
-  display: none;
-}
-.faq-input:checked ~ label svg {
-	transform: rotate(180deg)
-}
-.faq-input:checked ~ .faq-content {
-  display: block;
-  border-bottom: 0;
 }.press-logo {
   max-width: 100%;
   max-height: 60px;
@@ -477,6 +457,11 @@ img {
 		top: initial;
 		bottom: 7px;
 	}
+}.checklist {
+  list-style: none;
+}
+.checklist-item:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0,0,0,.1)
 }@media (max-width: 820px) {
   .main-menu {
     position: fixed;
